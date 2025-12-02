@@ -1,6 +1,6 @@
 # Advent Calendar 2025 Showcase
 
-<a href="a">CLick here to view the site</a>
+<a href="https://hollyefig.github.io/adventcalendar2025showcase/">CLick here to view the site</a>
 
 ## Dependencies
 
