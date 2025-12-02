@@ -1,0 +1,107 @@
+.nav-wrapper {
+    width: 100%;
+    /* box-shadow: 0 -3px 11.1px 0 #C2B095; */
+    /* bottom: -88px; */
+    border-top-width: 1px;
+    border-top-color: #C2B095;
+    border-top-style: solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white);
+}
+
+.nav-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.nav-content > div {
+    padding: 1em 4em; 
+}
+
+.nav-bars {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .4em;
+    cursor: pointer;
+}
+
+.past-date-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1024px;
+    width: 100%;
+    font-size: 1.2rem;
+}
+
+.past-date-right {
+    position: relative;
+    --date-switch-size: 50px;
+    cursor: pointer;
+}
+
+.date-switch-bg {
+    width: calc(var(--date-switch-size) * 2);
+    height: var(--date-switch-size);
+    border-radius: 1000em;
+    transition: .3s ease-in-out;
+}
+
+.date-switch-bg-off {
+    background-color: var(--dark-green);
+    opacity: .2;  
+}
+.date-switch-bg-on {
+    background-color: var(--red)!important;
+    opacity: 1!important;
+}
+
+.date-switch-button {
+    position: absolute;
+    width: var(--date-switch-size);
+    aspect-ratio: 1 / 1;
+    background-color: var(--white);
+    border-radius: 1000em;
+    box-shadow: 1.074px 1.074px 8.594px 0 rgba(0, 0, 0, 0.25);
+    top: 0;
+    transition: .3s right ease-in-out;
+}
+
+.date-switch-button-off {
+    right:var(--date-switch-size);
+}
+.date-switch-button-on {
+    right:0!important;
+}
+
+.nav-clickables {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+/* & MOBILE */
+@media screen and (max-width: 600px) {
+    .nav-content > div {
+    padding: 1em 1.5em!important; 
+}
+    .past-date-wrapper {
+        font-size: 1rem!important;
+    }
+
+    .past-date-right {
+        transform: scale(.7);
+    }
+}
